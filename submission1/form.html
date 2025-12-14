@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Form</title>
+</head>
+
+<body>
+<h1>Form</h1>
+<hr>
+
+<form action="signup.html" method="get">
+
+<div>
+<label for="username">User Name: </label>
+<input type="text" name="username" id="username" placeholder="Enter your username" required>
+</div>
+<br>
+
+<div>
+<label for="password">Password: </label>
+<input type="password" name="password" id="password" minlength=“8” placeholder="Enter your password" required>
+</div>
+<br>
+
+<div>
+<label for="dob">Date of Birth: </label>
+<input type="date" name="dob" id="dob" min="01-01-1900" required>
+</div>
+<br>
+
+<div>
+<label for="alert">Alert via: </label>
+
+<input type="checkbox" name="alert" id="smsalert">
+<label for="smsalert">SMS </label>
+
+<input type="checkbox" name="alert" id="emailalert">
+<label for="emailalert">Email </label>
+</div>
+<br>
+
+<div>
+<label for="gender">Select your gender: </label>
+
+<input type="radio" name="gender" id="male" value="male" required>
+<label for="male">MALE</label>
+
+<input type="radio" name="gender" id="female" value="female" required>
+<label for="female">FEMALE</label>
+
+<input type="radio" name="gender" id="other" value="other" required>
+<label for="other">OTHER</label>
+</div>
+<br>
+
+<div>
+<label for="state">Select your state: </label>
+<select required>
+<option value="" disabled selected hidden>-- Select a state --</option>
+<option value="MH">Maharashtra</option>
+<option value="AS">Assam</option>
+<option value="JK">Jammu and Kashmir</option>
+<option value="TN">Tamil Nadu</option>
+<option value="ot">Other</option>
+</select>
+</div>
+<br>
+
+<div>
+<label for="about">About you: </label><br>
+<textarea name="about" id="about" cols="100" rows="10" placeholder="tell me something about yourself">
+</textarea>
+</div>
+<br>
+
+<div>
+<label for="file">Files: </label>
+<input type="file" name="file" id="file">
+</div>
+<br><br>
+
+<button type="submit">Sign up</button>
+<button type="reset">Reset</button>
+
+</form>
+<hr>
+
+<a href="Home.html">Cancel form submission and return to HOME🏠</a>
+
+</body>
+
+</html>
